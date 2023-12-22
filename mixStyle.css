@@ -129,6 +129,9 @@ h1 > .love > .love-text {
 .log {
   background-color: rgb(37, 36, 29);
 }
+.game {
+  background-color: rgb(36, 34, 30);
+}
 
   #heading {
     text-align: center;
@@ -240,6 +243,7 @@ h1 > .love > .love-text {
     --fourDefaultBg: rgb(57, 54, 49);
 
     --pss: 4rem;
+    --pss2: 4rem
 
     --col: rgb(255, 255, 255);
     --sz: 5rem;
@@ -247,6 +251,10 @@ h1 > .love > .love-text {
     --red1: rgb(255, 255, 255);
     --darkPink1: rgb(255, 255, 255);
     --pink1: rgb(255, 255, 255);
+
+    --red2: rgb(255, 255, 255);
+    --darkPink2: rgb(255, 255, 255);
+    --pink2: rgb(255, 255, 255);
 
     --border: rgb(161, 161, 161);
   
@@ -1437,6 +1445,28 @@ a { text-decoration: none; border-bottom:3px solid rgb(0, 0, 0); }
   whitespace: nowrap;
 
   font-size: var(--pss);
+
+  border-bottom: none;
+  transition: all 75ms ease-in-out;
+
+}
+
+.myLink1 {
+  font-weight: 700;
+  animation: background-pan 2s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--red2),
+    var(--darkPink2),
+    var(--pink2),
+    var(--red2)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  whitespace: nowrap;
+
+  font-size: var(--pss2);
 
   border-bottom: none;
   transition: all 75ms ease-in-out;

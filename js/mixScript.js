@@ -885,9 +885,9 @@ var r1 = document.querySelector(':root');
   r1.style.setProperty('--pink1', '#ff8080');
 
 // default variation
-// r1.style.setProperty('--red1', 'white');
-// r1.style.setProperty('--darkPink1', 'aquamarine');
-// r1.style.setProperty('--pink1', 'mediumpurple');
+// r1.style.setProperty('--red2', 'white');
+// r1.style.setProperty('--darkPink2', 'aquamarine');
+// r1.style.setProperty('--pink2', 'mediumpurple');
 
   r1.style.setProperty('--fourDefaultBg', 'white')
   r1.style.setProperty('--pss', '4.5rem')
@@ -950,3 +950,44 @@ pls.onmouseleave = () => {
 	r2.style.setProperty('--sz', '5rem');
 	
 }
+
+
+// game style logic
+const link1 = document.querySelector(".myLink1");
+
+link1.onmouseenter = () => {
+  var r3 = document.querySelector(':root');
+
+//   def
+  r3.style.setProperty('--red2', 'white');
+  r3.style.setProperty('--darkPink2', 'aquamarine');
+  r3.style.setProperty('--pink2', 'mediumpurple');
+
+
+  r3.style.setProperty('--fourDefaultBg', 'white')
+  r3.style.setProperty('--pss2', '4.5rem')
+
+}
+
+link1.onmouseleave = onMouseLeave = () => {
+  var r3 = document.querySelector(':root');
+
+  r3.style.setProperty('--red2', 'white');
+  r3.style.setProperty('--darkPink2', 'white');
+  r3.style.setProperty('--pink2', 'white');
+  r3.style.setProperty('--fourDefaultBg', '#393631')
+  r3.style.setProperty('--pss2', '4rem')
+
+}
+
+
+link1.onmousedown = () => {
+	var r3 = document.querySelector(':root');
+
+	r3.style.setProperty('--red2', 'white');
+	r3.style.setProperty('--darkPink2', 'white');
+	r3.style.setProperty('--pink2', 'white');
+	r3.style.setProperty('--fourDefaultBg', '#393631')
+	r3.style.setProperty('--pss2', '4rem')
+  
+  }
